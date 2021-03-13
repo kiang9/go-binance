@@ -621,3 +621,8 @@ func (c *Client) NewListDustLogService() *ListDustLogService {
 func (c *Client) NewDustTransferService() *DustTransferService {
 	return &DustTransferService{c: c}
 }
+
+// NewCreateSubAccountService init creating sub-account service
+func (c *Client) NewCreateSubAccountService() *CreateSubAccountService {
+	return &CreateSubAccountService{c: c}
+}
